@@ -324,7 +324,7 @@ footer {
         DevOps Engineer specjalizujący się w Dockerze, Linuxie i bezpieczeństwie sieciowym. Prowadzę self-hosted środowisko produkcyjne z 16+ skonteneryzowanymi serwisami — networking, monitoring, hardening, zdalne treningi ML. Kontrybuuję też do projektów open source (embedded) i uczę programowania w Gigantach Programowania.
       </p>
       <p class="muted" style="font-size:16px;line-height:1.75;max-width:680px;margin-top:12px;" data-i18n="about_edu">
-        Inż. Sieci Komputerowe · Mgr Sztuczna Inteligencja i Data Science (w trakcie) — Politechnika Częstochowska.
+        Inż. Sieci Komputerowe · Mgr Sztuczna Inteligencja i Data Science (w trakcie) — Politechnika Częstochowska. Praca magisterska: benchmarking dużych modeli językowych (LLM).
       </p>
     </div>
   </div>
@@ -394,7 +394,39 @@ footer {
       </div>
     </div>
 
-    <div class="fade-in d3" style="margin-top:48px;">
+    <div class="fade-in d3">
+      <div class="infra-box">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+          <h3 style="margin:0;" data-i18n="p3_title">LLM Benchmark Pipeline — Praca Magisterska</h3>
+          <div class="btn-row" style="gap:8px;">
+            <a href="https://github.com/Subbok/llm-benchmark-thesis" target="_blank" rel="noopener" class="tag mono" style="color:#64d8cb;border-color:rgba(100,216,203,0.3);text-decoration:none;">GitHub →</a>
+          </div>
+        </div>
+        <p class="muted" style="font-size:14px;line-height:1.7;margin-bottom:16px;" data-i18n="p3_desc">
+          Pipeline do porównania 10 dużych modeli językowych (LLM) na zadaniach tekstowych i kodowych — automatyczne zbieranie odpowiedzi, ewaluacja wieloma metrykami i analiza wyników.
+        </p>
+        <div class="infra-grid">
+          <div class="infra-item"><span class="arrow">▸</span><span data-i18n="p3_i1">Zunifikowany collector: Ollama (lokalne) + OpenRouter API (komercyjne)</span></div>
+          <div class="infra-item"><span class="arrow">▸</span><span data-i18n="p3_i2">4 metryki: Pass@1, CodeBLEU (AST + dataflow), BERTScore (RoBERTa-large), G-Eval 1-100</span></div>
+          <div class="infra-item"><span class="arrow">▸</span><span data-i18n="p3_i3">Master pipeline (Bash) z zarządzaniem środowiskiem conda i detekcją VRAM</span></div>
+          <div class="infra-item"><span class="arrow">▸</span><span data-i18n="p3_i4">10 modeli (Claude, GPT, Gemini, Grok, DeepSeek, KIMI + Qwen, Llama, Mistral, Gemma)</span></div>
+          <div class="infra-item"><span class="arrow">▸</span><span data-i18n="p3_i5">Sandboxowane wykonywanie kodu z timeout protection — 184 testy jednostkowe</span></div>
+          <div class="infra-item"><span class="arrow">▸</span><span data-i18n="p3_i6">GPU-accelerated ewaluacja (CUDA/PyTorch) z automatycznym fallbackiem na CPU</span></div>
+        </div>
+        <div class="tag-row mono" style="margin-top:16px;">
+          <span class="tag">Python</span>
+          <span class="tag">Bash</span>
+          <span class="tag">Ollama</span>
+          <span class="tag">OpenRouter API</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">CUDA</span>
+          <span class="tag">conda</span>
+          <span class="tag">tree-sitter</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade-in" style="margin-top:48px;">
       <p class="section-label mono" data-i18n="stack_label">GŁÓWNY STACK</p>
       <div class="tag-row" style="gap:10px;margin-top:12px;">
         <span class="skill-tag">Docker 29 & Compose v5</span>
@@ -460,6 +492,9 @@ footer {
           <p class="dimmer" style="font-size:13px;line-height:1.6;margin-top:6px;" data-i18n="edu_msc_courses">
             Widzenie Komputerowe · Systemy Rekomendacyjne · Inteligentne Systemy Transakcyjne · NLP · Deep Learning · Architektury Obliczeniowe dla AI
           </p>
+          <p class="muted" style="font-size:13px;line-height:1.6;margin-top:6px;" data-i18n="edu_msc_thesis">
+            Praca magisterska: Porównanie dużych modeli językowych (LLM) na zadaniach tekstowych i kodowych
+          </p>
         </div>
 
         <div style="margin-top:20px;">
@@ -518,7 +553,7 @@ const T = {
     about_label: 'O MNIE',
     about_title: 'Inżynier skoncentrowany na infrastrukturze.',
     about_desc: 'Inżynier DevOps ze specjalizacją w Dockerze, systemach Linux i bezpieczeństwie sieciowym. Zarządzam własnym środowiskiem produkcyjnym obejmującym ponad 20 kontenerów — od stacku sieciowego i monitoringu, po hardening bezpieczeństwa i zdalne trenowanie modeli ML. Kontrybuuję do projektów open source embedded i uczę programowania w szkole Giganci Programowania.',
-    about_edu: 'Inż. Sieci Komputerowe · Mgr Sztuczna Inteligencja i Data Science (w trakcie) — Politechnika Częstochowska.',
+    about_edu: 'Inż. Sieci Komputerowe · Mgr Sztuczna Inteligencja i Data Science (w trakcie) — Politechnika Częstochowska. Praca magisterska: benchmarking dużych modeli językowych (LLM).',
     projects_label: 'PROJEKTY',
     projects_title: 'Moje realizacje',
     p1_title: 'Infrastruktura Serwerowa Self-Hosted',
@@ -537,6 +572,14 @@ const T = {
     p2_i4: 'Modularny szablon językowy ułatwiający kontrybucje społeczności',
     p2_i5: 'Przepisany moduł kalendarza: import wielu URL, zdarzenia cykliczne, poprawki stref czasowych',
     p2_i6: 'Przeprojektowany system QuickAlarm z dynamiczną konfiguracją',
+    p3_title: 'LLM Benchmark Pipeline — Praca Magisterska',
+    p3_desc: 'Pipeline do porównania 10 dużych modeli językowych (LLM) na zadaniach tekstowych i kodowych — automatyczne zbieranie odpowiedzi, ewaluacja wieloma metrykami i analiza wyników.',
+    p3_i1: 'Zunifikowany collector: Ollama (modele lokalne) + OpenRouter API (modele komercyjne)',
+    p3_i2: '4 metryki ewaluacji: Pass@1 (unit testy), CodeBLEU (AST + dataflow), BERTScore (RoBERTa-large), G-Eval 1-100 (LLM-as-a-Judge)',
+    p3_i3: 'Master pipeline (Bash) z zarządzaniem środowiskiem conda i automatyczną detekcją VRAM',
+    p3_i4: '10 modeli: Claude, GPT, Gemini, Grok, DeepSeek, KIMI + Qwen, Llama, Mistral, Gemma — 800 odpowiedzi',
+    p3_i5: 'Sandboxowane wykonywanie kodu z timeout protection — 184 testy jednostkowe',
+    p3_i6: 'GPU-accelerated ewaluacja (CUDA/PyTorch) z automatycznym fallbackiem na CPU',
     tag_embedded: 'Systemy Embedded',
     stack_label: 'GŁÓWNY STACK',
     skill_linux: 'Administracja Linux',
@@ -557,6 +600,7 @@ const T = {
     edu_msc: 'Mgr — Sztuczna Inteligencja i Data Science',
     edu_msc_date: '2025 – Obecnie',
     edu_msc_courses: 'Widzenie Komputerowe · Systemy Rekomendacyjne · Inteligentne Systemy Transakcyjne · NLP · Deep Learning · Architektury Obliczeniowe dla AI',
+    edu_msc_thesis: 'Praca magisterska: Porównanie dużych modeli językowych (LLM) na zadaniach tekstowych i kodowych',
     edu_beng: 'Inż. — Informatyka, Sieci Komputerowe',
     edu_beng_courses: 'Bezpieczeństwo Systemów Komputerowych · Zarządzanie Infrastrukturą Datacenter · Sieci Bezprzewodowe · Administracja Sieciowymi SO · Systemy Wbudowane · Języki Skryptowe',
     contact_label: 'KONTAKT',
@@ -578,7 +622,7 @@ const T = {
     about_label: 'ABOUT',
     about_title: 'Infrastructure-first engineer.',
     about_desc: 'DevOps Engineer specializing in Docker, Linux, and network security. I run a self-hosted production environment with 20+ containers — networking, monitoring, security hardening, and remote ML training. I also contribute to open source embedded projects and teach programming at Giganci Programowania.',
-    about_edu: 'B.Eng. in Computer Networks · M.Sc. in AI & Data Science (in progress) — Częstochowa University of Technology.',
+    about_edu: 'B.Eng. in Computer Networks · M.Sc. in AI & Data Science (in progress) — Częstochowa University of Technology. Thesis: benchmarking large language models (LLMs).',
     projects_label: 'PROJECTS',
     projects_title: "What I've Built",
     p1_title: 'Self-Hosted Server Infrastructure',
@@ -597,6 +641,14 @@ const T = {
     p2_i4: 'Reusable language template for community contributions',
     p2_i5: 'Rewrote calendar module — multi-URL import, recurring events, timezone fixes',
     p2_i6: 'Redesigned QuickAlarm system for dynamic configuration',
+    p3_title: 'LLM Benchmark Pipeline — Master\'s Thesis',
+    p3_desc: 'End-to-end pipeline for comparing 10 large language models (LLMs) on text and code generation tasks — automated response collection, multi-metric evaluation, and result analysis.',
+    p3_i1: 'Unified collector: Ollama (local models) + OpenRouter API (commercial models)',
+    p3_i2: '4 evaluation metrics: Pass@1 (unit tests), CodeBLEU (AST + dataflow), BERTScore (RoBERTa-large), G-Eval 1-100 (LLM-as-a-Judge)',
+    p3_i3: 'Master Bash pipeline with conda environment management and automatic VRAM detection',
+    p3_i4: '10 models: Claude, GPT, Gemini, Grok, DeepSeek, KIMI + Qwen, Llama, Mistral, Gemma — 800 responses',
+    p3_i5: 'Sandboxed code execution with timeout protection — 184 unit tests',
+    p3_i6: 'GPU-accelerated evaluation (CUDA/PyTorch) with automatic CPU fallback',
     tag_embedded: 'Embedded Systems',
     stack_label: 'CORE STACK',
     skill_linux: 'Linux Administration',
@@ -617,6 +669,7 @@ const T = {
     edu_msc: 'M.Sc. — Artificial Intelligence & Data Science',
     edu_msc_date: '2025 – Present',
     edu_msc_courses: 'Computer Vision · Recommender Systems · Intelligent Trading Systems · NLP · Deep Learning · AI Computational Architectures',
+    edu_msc_thesis: 'Thesis: Comparative evaluation of large language models on text and code generation tasks',
     edu_beng: 'B.Eng. — Computer Science, Computer Networks',
     edu_beng_courses: 'Computer System Security · Datacenter Infrastructure Management · Wireless Networks · Network OS Administration · Embedded Systems · Scripting Languages',
     contact_label: 'CONTACT',
