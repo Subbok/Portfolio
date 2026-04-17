@@ -4,7 +4,7 @@ Personal portfolio site — single-page, vanilla HTML/CSS/JS, no build step.
 
 **Live:** [tomaszkobus.dev](https://tomaszkobus.dev)
 
-![Preview](preview.png)
+![Preview](https://github.com/user-attachments/assets/3715533e-fbc1-468d-93e5-cfb61424ab62)
 
 ---
 
@@ -31,7 +31,6 @@ No dependencies. No npm install. No `dist/`. Open `index.html` in a browser — 
 ├── index.html              # Everything (HTML + CSS + JS)
 ├── favicon.svg             # SVG favicon
 ├── CV_Tomasz_Kobus.pdf     # Downloadable CV
-├── preview.png             # Screenshot used in this README
 └── README.md
 ```
 
@@ -46,7 +45,7 @@ No CI/CD config needed in this repo — Cloudflare Pages handles it via the dash
 ## Local development
 
 ```bash
-git clone https://github.com/Subbok/Portfolio.git
+git clone https://github.com/Subbok/tomaszkobus.dev.git
 cd tomaszkobus.dev
 python3 -m http.server 8000
 # open http://localhost:8000
