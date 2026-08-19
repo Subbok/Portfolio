@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tomasz Kobus — DevOps Engineer</title>
+<title>Tomasz Kobus — DevOps & MLOps Engineer</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="canonical" href="https://tomaszkobus.dev/">
 <meta name="description" content="Tomasz Kobus — DevOps & MLOps Engineer. Docker, Linux, Rust, Cloudflare Tunnels, GPU infrastruktura dla ML. Twórca CellForge. Częstochowa, Polska.">
@@ -14,14 +14,19 @@
 <meta property="og:url" content="https://tomaszkobus.dev/">
 <meta property="og:title" content="Tomasz Kobus — DevOps & MLOps Engineer">
 <meta property="og:description" content="DevOps Engineer na styku infrastruktury i AI. Własna produkcyjna infrastruktura, ML/GPU tooling, open source.">
+<meta property="og:image" content="https://tomaszkobus.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tomasz Kobus — DevOps & MLOps Engineer">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:site_name" content="Tomasz Kobus Portfolio">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Tomasz Kobus — DevOps & MLOps Engineer">
 <meta name="twitter:description" content="DevOps Engineer na styku infrastruktury i AI. Własna produkcyjna infrastruktura, ML/GPU tooling, open source.">
+<meta name="twitter:image" content="https://tomaszkobus.dev/og-image.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Tomasz Kobus","jobTitle":"DevOps & MLOps Engineer","url":"https://tomaszkobus.dev","sameAs":["https://github.com/Subbok","https://www.linkedin.com/in/tomasz-kobus/"],"address":{"@type":"PostalAddress","addressLocality":"Częstochowa","addressCountry":"PL"},"knowsAbout":["Docker","Linux","DevOps","MLOps","Rust","Python","PyTorch","CUDA","Cloudflare","GPU Infrastructure","Self-hosted Infrastructure"]}
+{"@context":"https://schema.org","@type":"Person","name":"Tomasz Kobus","jobTitle":"DevOps & MLOps Engineer","url":"https://tomaszkobus.dev","sameAs":["https://github.com/Subbok","https://www.linkedin.com/in/tomasz-kobus/"],"address":{"@type":"PostalAddress","addressLocality":"Częstochowa","addressCountry":"PL"},"knowsAbout":["Docker","Linux","DevOps","MLOps","Rust","Python","PyTorch","CUDA","Cloudflare","GPU Infrastructure","Self-hosted Infrastructure"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Politechnika Częstochowska","sameAs":"https://pcz.pl"},"worksFor":{"@type":"Organization","name":"Probus Sp. z o.o."}}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,6 +63,12 @@ a { text-decoration: none; }
 .fade-in.d1 { transition-delay: 0.1s; }
 .fade-in.d2 { transition-delay: 0.2s; }
 .fade-in.d3 { transition-delay: 0.25s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .fade-in { opacity: 1; transform: none; transition: none; }
+  #cursor { display: none; }
+}
 
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -271,14 +282,14 @@ footer {
       <a href="#experience" data-i18n="nav_experience">Doświadczenie</a>
       <a href="#contact" data-i18n="nav_contact">Kontakt</a>
       <span class="nav-divider" style="width:1px;height:20px;background:rgba(255,255,255,0.1);"></span>
-      <a href="https://github.com/Subbok" target="_blank" rel="noopener" title="GitHub">GH</a>
-      <a href="https://www.linkedin.com/in/tomasz-kobus/" target="_blank" rel="noopener" title="LinkedIn">LI</a>
-      <a href="mailto:tommkobuss@gmail.com" title="Email" style="color:#64d8cb;">@</a>
+      <a href="https://github.com/Subbok" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">GH</a>
+      <a href="https://www.linkedin.com/in/tomasz-kobus/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">LI</a>
+      <a href="mailto:tommkobuss@gmail.com" title="Email" aria-label="Email" style="color:#64d8cb;">@</a>
       <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
     </div>
     <div style="display:flex;align-items:center;gap:12px;">
       <button class="lang-btn" id="langBtnMobile" onclick="toggleLang()" style="display:none;">EN</button>
-      <button class="nav-mobile-btn" onclick="toggleMobile()" aria-label="Menu">☰</button>
+      <button class="nav-mobile-btn" onclick="toggleMobile()" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
     </div>
   </div>
   <div class="nav-mobile-menu mono" id="mobileMenu">
@@ -302,14 +313,14 @@ footer {
     <h1 class="display">Tomasz Kobus</h1>
     <p class="hero-subtitle mono">DevOps & MLOps Engineer<span id="cursor">▌</span></p>
     <p class="hero-location mono" style="color:#6b7280;font-size:14px;margin-bottom:16px;" data-i18n="location">📍 Częstochowa, Polska · Open to remote</p>
-    <p class="hero-highlight mono" style="color:#64d8cb;font-size:14px;margin-bottom:12px;opacity:0.85;" data-i18n="hero_highlight">Na styku infrastruktury i AI · 20+ serwisów 24/7 · GPU tooling · Open Source</p>
+    <p class="hero-highlight mono" style="color:#64d8cb;font-size:14px;margin-bottom:12px;opacity:0.85;" data-i18n="hero_highlight">Mgr inż. AI & Data Science · 30+ serwisów 24/7 · GPU tooling · Open Source</p>
     <p class="hero-desc" data-i18n="hero_desc">
       Buduję i utrzymuję skonteneryzowaną infrastrukturę — Docker, Linux, Cloudflare, GPU/CUDA stack dla ML. Piszę tooling w Rust i Pythonie. Twórca CellForge — open-source alternatywy dla JupyterLab.
     </p>
     <div class="btn-row">
       <a href="#projects" class="btn-primary" data-i18n="hero_btn_projects">Zobacz projekty ↓</a>
       <a href="mailto:tommkobuss@gmail.com" class="btn-secondary" data-i18n="hero_btn_contact">Napisz do mnie</a>
-      <a href="CV_Tomasz_Kobus.pdf" download class="btn-secondary" data-i18n="hero_btn_cv">📄 Pobierz CV</a>
+      <a href="CV_Tomasz_Kobus.pdf" download class="btn-secondary" id="cvLink" data-i18n="hero_btn_cv">📄 Pobierz CV</a>
     </div>
   </div>
 </section>
@@ -322,7 +333,7 @@ footer {
     </div>
     <div class="fade-in d1">
       <p class="muted" style="font-size:16px;line-height:1.75;max-width:680px;" data-i18n="about_desc">
-        Inżynier na styku DevOps i MLOps. Prowadzę własną infrastrukturę produkcyjną — 20+ kontenerów, GPU passthrough, zero-trust networking. Piszę własne tooling: CellForge (Rust + React notebook IDE), pipeline do ewaluacji LLM-ów, custom monitoring. Kontrybuuję do open source (InkWatchy — firmware embedded). Zawodowo pracuję jako logistyk i informatyk w Probus Sp. z o.o.
+        Inżynier na styku DevOps i MLOps. Prowadzę własną infrastrukturę produkcyjną — 30+ kontenerów, GPU passthrough, zero-trust networking. Piszę własne tooling: CellForge (Rust + React notebook IDE), pipeline do ewaluacji LLM-ów, custom monitoring. Kontrybuuję do open source (InkWatchy — firmware embedded). Zawodowo pracuję jako logistyk i informatyk w Probus Sp. z o.o.
       </p>
       <p class="muted" style="font-size:16px;line-height:1.75;max-width:680px;margin-top:12px;" data-i18n="about_edu">
         Mgr inż. — Sztuczna Inteligencja i Data Science · Inż. Sieci Komputerowe — Politechnika Częstochowska. Praca magisterska: porównanie wybranych dużych modeli językowych pod kątem generowania odpowiedzi tekstowych i kodu.
@@ -600,7 +611,7 @@ const T = {
     nav_contact: 'Kontakt',
     badge: 'DEVOPS · MLOPS',
     location: '📍 Częstochowa, Polska · Open to remote',
-    hero_highlight: 'Na styku infrastruktury i AI · 30+ serwisów 24/7 · GPU tooling · Open Source',
+    hero_highlight: 'Mgr inż. AI & Data Science · 30+ serwisów 24/7 · GPU tooling · Open Source',
     hero_desc: 'Buduję i utrzymuję skonteneryzowaną infrastrukturę — Docker, Linux, Cloudflare, GPU/CUDA stack dla ML. Piszę tooling w Rust i Pythonie. Twórca CellForge — open-source alternatywy dla JupyterLab.',
     hero_btn_projects: 'Zobacz projekty ↓',
     hero_btn_contact: 'Skontaktuj się',
@@ -682,7 +693,7 @@ const T = {
     nav_contact: 'Contact',
     badge: 'DEVOPS · MLOPS',
     location: '📍 Częstochowa, Poland · Open to remote',
-    hero_highlight: 'Where infrastructure meets AI · 30+ services 24/7 · GPU tooling · Open Source',
+    hero_highlight: 'M.Sc. Eng. in AI & Data Science · 30+ services 24/7 · GPU tooling · Open Source',
     hero_desc: 'I build and maintain containerized infrastructure — Docker, Linux, Cloudflare, GPU/CUDA stack for ML. I write tooling in Rust and Python. Creator of CellForge — an open-source JupyterLab alternative.',
     hero_btn_projects: 'View Projects ↓',
     hero_btn_contact: 'Contact Me',
@@ -772,6 +783,8 @@ function applyLang(lang) {
   const otherLang = lang === 'pl' ? 'EN' : 'PL';
   document.getElementById('langBtn').textContent = otherLang;
   document.getElementById('langBtnMobile').textContent = otherLang;
+  const cvLink = document.getElementById('cvLink');
+  if (cvLink) cvLink.href = lang === 'en' ? 'CV_Tomasz_Kobus_EN.pdf' : 'CV_Tomasz_Kobus.pdf';
   try { localStorage.setItem('lang', lang); } catch(e) {}
 }
 
@@ -804,10 +817,13 @@ function toggleMobile() {
   const btn = document.querySelector('.nav-mobile-btn');
   const open = m.classList.toggle('open');
   btn.textContent = open ? '✕' : '☰';
+  btn.setAttribute('aria-expanded', open);
 }
 function closeMobile() {
   document.getElementById('mobileMenu').classList.remove('open');
-  document.querySelector('.nav-mobile-btn').textContent = '☰';
+  const btn = document.querySelector('.nav-mobile-btn');
+  btn.textContent = '☰';
+  btn.setAttribute('aria-expanded', 'false');
 }
 
 const obs = new IntersectionObserver((entries) => {

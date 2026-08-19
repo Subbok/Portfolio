@@ -29,6 +29,12 @@
   body-font-size: 9.2pt,
   side-width: 3.5cm,
   paper-size: "a4",
+  footer: [
+    #set text(size: 6.5pt, fill: rgb("#8a8a8a"))
+    #align(center)[
+      Tomasz Kobus CV #sym.dot.c sierpień 2026 #sym.dot.c Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w CV na potrzeby procesu rekrutacji (RODO — Rozporządzenie UE 2016/679, art. 6 ust. 1 lit. a).
+    ]
+  ],
 )
 
 #side[
@@ -38,7 +44,7 @@
   = Kontakt
   #contact-info()
 
-  Otwarty na pracę w Częstochowie lub zdalnie.
+  Otwarty na role DevOps / MLOps — zdalnie lub hybrydowo.
 
   #social-links()
 
@@ -121,7 +127,7 @@
 #entry(
   title: "CellForge — Notebook IDE w Rust",
   date: "2025 – teraz",
-  institution: "github.com/Subbok/CellForge",
+  institution: link("https://github.com/Subbok/CellForge")[github.com/Subbok/CellForge],
   location: "Open Source",
 )[
   - Alternatywa dla JupyterLab w Rust + React — natywna implementacja Jupyter messaging protocol
@@ -133,7 +139,7 @@
 #entry(
   title: "LLM Benchmark Pipeline — Praca Magisterska",
   date: "2025 – 2026",
-  institution: "github.com/Subbok/llm-benchmark-thesis",
+  institution: link("https://github.com/Subbok/llm-benchmark-thesis")[github.com/Subbok/llm-benchmark-thesis],
   location: "Obroniona 2026",
 )[
   - Wielowymiarowa ewaluacja 10 modeli LLM (6 komercyjnych + 4 lokalne) na 80 zadaniach — 800 wywołań
@@ -145,7 +151,7 @@
 #entry(
   title: "InkWatchy — kontrybutor open source",
   date: "2024 – teraz",
-  institution: "github.com/Szybet/InkWatchy",
+  institution: link("https://github.com/Szybet/InkWatchy")[github.com/Szybet/InkWatchy],
   location: "Open Source",
 )[
   - Kompletny system i18n (EN/PL/DE/SK) dla firmware zegarka e-ink ESP32 — 116+ kluczy z walidacją compile-time, zero narzutu runtime
