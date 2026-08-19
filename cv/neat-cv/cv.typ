@@ -1,7 +1,13 @@
 #import "@preview/neat-cv:0.7.0": (
-  contact-info, cv, email-link, entry, item-pills, item-with-level,
-  publications, side, social-links,
+  contact-info, cv, email-link, entry as neat-entry, item-pills,
+  item-with-level, publications, side, social-links,
 )
+
+// Ciaśniejszy odstęp między wpisami niż domyślny w szablonie (block above: 1em)
+#let entry(..args) = {
+  v(-0.4em)
+  neat-entry(..args)
+}
 
 #set text(lang: "pl")
 
@@ -20,7 +26,7 @@
   profile-picture: image("profile.png"),
   accent-color: rgb("#0066cc"),
   header-color: rgb("#35414d"),
-  body-font-size: 9.3pt,
+  body-font-size: 9.2pt,
   side-width: 3.5cm,
   paper-size: "a4",
 )
@@ -67,8 +73,18 @@
 = Doświadczenie zawodowe
 
 #entry(
+  title: "Logistyk / Informatyk",
+  date: "07.2026 – teraz",
+  institution: "Probus Sp. z o.o.",
+  location: "Żędowice",
+)[
+  - Planowanie i koordynacja międzynarodowych przewozów osób na trasach Polska – Niemcy
+  - Ogólne wsparcie IT — bieżąca pomoc techniczna dla firmy
+]
+
+#entry(
   title: "Instruktor Programowania",
-  date: "04.2025 – teraz",
+  date: "2025 – 2026",
   institution: "Giganci Programowania sp. z o.o.",
   location: "Częstochowa",
 )[
@@ -116,9 +132,9 @@
 
 #entry(
   title: "LLM Benchmark Pipeline — Praca Magisterska",
-  date: "2025 – teraz",
+  date: "2025 – 2026",
   institution: "github.com/Subbok/llm-benchmark-thesis",
-  location: "Obrona Q4 2026",
+  location: "Obroniona 2026",
 )[
   - Wielowymiarowa ewaluacja 10 modeli LLM (6 komercyjnych + 4 lokalne) na 80 zadaniach — 800 wywołań
   - 4 metryki: Pass\@1 (unit tests), CodeBLEU (AST + dataflow), BERTScore (RoBERTa-large), G-Eval 1-100 (LLM-as-a-Judge)
@@ -139,11 +155,11 @@
 = Wykształcenie
 
 #entry(
-  title: "Informatyka — Sztuczna Inteligencja i Data Science (mgr)",
-  date: "2025 – teraz",
+  title: "Informatyka — Sztuczna Inteligencja i Data Science (mgr inż.)",
+  date: "2025 – 2026",
   institution: "Politechnika Częstochowska",
   location: "Częstochowa",
-  [Praca: _"Porównanie wybranych dużych modeli językowych pod kątem generowania odpowiedzi tekstowych i kodu"_ (obrona Q4 2026). Kursy: Widzenie Komputerowe, Systemy Rekomendacyjne, NLP, Deep Learning, Architektury Obliczeniowe dla AI.],
+  [Praca: _"Porównanie wybranych dużych modeli językowych pod kątem generowania odpowiedzi tekstowych i kodu"_ (obroniona 2026). Kursy: Widzenie Komputerowe, Systemy Rekomendacyjne, NLP, Deep Learning, Architektury Obliczeniowe dla AI.],
 )
 
 #entry(
