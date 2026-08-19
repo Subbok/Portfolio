@@ -23,7 +23,6 @@
     github: "Subbok",
     linkedin: "tomasz-kobus",
   ),
-  profile-picture: image("profile.png"),
   accent-color: rgb("#0066cc"),
   header-color: rgb("#35414d"),
   body-font-size: 9.2pt,
