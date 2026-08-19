@@ -47,6 +47,9 @@
   #item-with-level("Polish", 5, subtitle: "Native")
   #item-with-level("English", 4.5, subtitle: "C1 Cambridge, 2022")
 
+  = Driving Licence
+  Category B
+
   = Core Stack
   #item-pills((
     "Docker / Compose",

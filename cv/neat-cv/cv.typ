@@ -52,6 +52,9 @@
   #item-with-level("Polski", 5, subtitle: "Ojczysty")
   #item-with-level("Angielski", 4.5, subtitle: "C1 Cambridge, 2022")
 
+  = Prawo jazdy
+  Kategoria B
+
   = Główny stack
   #item-pills((
     "Docker / Compose",
