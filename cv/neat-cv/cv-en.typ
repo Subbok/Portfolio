@@ -33,7 +33,7 @@
 
 #side[
   = About
-  Engineer at the intersection of DevOps and MLOps. I run a production infrastructure of 30+ Docker containers 24/7 with GPU passthrough. Creator of CellForge — an open-source notebook IDE in Rust. InkWatchy contributor.
+  Engineer at the intersection of DevOps and MLOps. I build Kursor, a fleet and settlement system for PROBUS, and run my own NixOS infrastructure. Creator of CellForge — an open-source notebook IDE in Rust. InkWatchy contributor.
 
   = Contact
   #contact-info()
@@ -83,6 +83,7 @@
 )[
   - Planning and coordinating international passenger transport on Poland–Germany routes
   - General IT support — day-to-day technical assistance across the company
+  - Developing and deploying Kursor (Rust, React, PostgreSQL)
 ]
 
 #entry(
@@ -110,15 +111,24 @@
 = Projects
 
 #entry(
+  title: "Kursor — fleet and settlement system for PROBUS Sp. z o.o.",
+  date: "2026 – present",
+  institution: "Layershift (development and maintenance)",
+  location: "Production",
+)[
+  - Fleet, service intervals from configurable rules, driver settlements (mobile forms, PDF printouts via Typst), route pricing; replaced Excel sheets
+  - GPS and RCS integrations (read-only), client portal with schedule and reservations (in progress), licence-enabled modules incl. the JEST edition for field crews
+  - _Stack: Rust (axum, sqlx), PostgreSQL, React, TypeScript, Vite, Typst, Docker, Cloudflare Tunnel_
+]
+
+#entry(
   title: "Self-hosted server infrastructure",
   date: "2023 – present",
   institution: "Personal project",
-  location: "Production 24/7 · 99.92% uptime",
+  location: "Production 24/7",
 )[
-  - 30+ containerized services on a Xeon E5-2680v4 + Quadro RTX 4000 + 2 TB storage (\~\$500+/mo AWS equivalent)
-  - Docker Compose with YAML anchors, isolated networks and health checks; zero-trust exposure via Cloudflare Tunnels
-  - Self-hosted cloud (Nextcloud, Home Assistant, Jellyfin + \*arr, Next.js + Postgres) + monitoring (Uptime Kuma, Watchtower, custom Flask power-monitor)
-  - SSH hardening (fail2ban, key-only auth), btrfs snapshots; _Stack: Docker Compose, Cloudflare Tunnels, NVIDIA Container Toolkit, Pelican, Nginx_
+  - NixOS host (flake), services in Docker Compose, NVIDIA GPU; access only through Cloudflare Tunnels, key-only SSH, fail2ban
+  - Monitoring (Prometheus, Grafana, an independent second point on a separate device), btrfs with hourly snapshots; _Stack: NixOS, Docker Compose, NVIDIA Container Toolkit, Prometheus_
 ]
 
 #entry(

@@ -20,6 +20,7 @@ Deliberately minimal. No framework, no bundler, no package.json. The whole thing
   - Mobile hamburger menu
   - Blinking cursor animation in hero
   - Fade-in on scroll via `IntersectionObserver`
+- **Content** — projects section covers Kursor (fleet and settlement system for PROBUS Sp. z o.o.), self-hosted NixOS infrastructure, CellForge, InkWatchy and the thesis benchmark
 - **SEO** — OpenGraph, Twitter Card, JSON-LD Person schema, canonical URL, descriptive meta tags
 
 No dependencies. No npm install. No `dist/`. Open `index.html` in a browser — that's the dev environment.
