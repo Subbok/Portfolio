@@ -25,7 +25,7 @@
   ),
   accent-color: rgb("#0066cc"),
   header-color: rgb("#35414d"),
-  body-font-size: 9.2pt,
+  body-font-size: 9.0pt,
   side-width: 3.5cm,
   paper-size: "a4",
   gdpr: true,
@@ -105,7 +105,6 @@
   location: "Lubliniec",
 )[
   - Helpdesk and hardware/software diagnostics, automation of administrative tasks (application autostart), workstation setup
-  - _Stack: Python, Bash, Windows, Linux_
 ]
 
 = Projects
@@ -117,7 +116,7 @@
   location: "Production",
 )[
   - Fleet, service intervals from configurable rules, driver settlements (mobile forms, PDF printouts via Typst), route pricing; replaced Excel sheets
-  - GPS and RCS integrations (read-only), client portal with schedule and reservations (in progress), licence-enabled modules incl. the JEST edition for field crews
+  - GPS and RCS integrations (read-only), client portal with schedule, reservations and GPS, licence-enabled modules incl. the JEST edition for field crews
   - _Stack: Rust (axum, sqlx), PostgreSQL, React, TypeScript, Vite, Typst, Docker, Cloudflare Tunnel_
 ]
 
@@ -172,7 +171,7 @@
   date: "2025 – 2026",
   institution: "Częstochowa University of Technology",
   location: "Częstochowa",
-  [Thesis: _"Comparative evaluation of selected large language models on text and code generation tasks"_ (defended 2026). Coursework: Computer Vision, Recommender Systems, NLP, Deep Learning, AI Computational Architectures.],
+  [Thesis: _"Comparative evaluation of selected large language models on text and code generation tasks"_ (defended 2026). Coursework: Computer Vision, NLP, Deep Learning.],
 )
 
 #entry(
@@ -180,5 +179,5 @@
   date: "2020 – 2025",
   institution: "Częstochowa University of Technology",
   location: "Częstochowa",
-  [Thesis: _"Comparison of 3D printer firmware — Marlin vs Klipper"_. Coursework: Computer System Security, Datacenter Infrastructure Management, Wireless Networks, Network OS Administration, Embedded Systems.],
+  [Thesis: _"Comparison of 3D printer firmware — Marlin vs Klipper"_. Coursework: System Security, Datacenter Infrastructure, OS Administration.],
 )

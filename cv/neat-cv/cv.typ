@@ -25,13 +25,13 @@
   ),
   accent-color: rgb("#0066cc"),
   header-color: rgb("#35414d"),
-  body-font-size: 9.2pt,
+  body-font-size: 9.0pt,
   side-width: 3.5cm,
   paper-size: "a4",
   footer: [
     #set text(size: 6.5pt, fill: rgb("#8a8a8a"))
     #align(center)[
-      Tomasz Kobus CV #sym.dot.c sierpień 2026 #sym.dot.c Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w CV na potrzeby procesu rekrutacji (RODO — Rozporządzenie UE 2016/679, art. 6 ust. 1 lit. a).
+      Tomasz Kobus CV #sym.dot.c listopad 2026 #sym.dot.c Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w CV na potrzeby procesu rekrutacji (RODO — Rozporządzenie UE 2016/679, art. 6 ust. 1 lit. a).
     ]
   ],
 )
@@ -110,7 +110,6 @@
   location: "Lubliniec",
 )[
   - Helpdesk i diagnostyka sprzętowa/programowa, automatyzacja zadań administracyjnych (autostart aplikacji), konfiguracja stacji roboczych
-  - _Stack: Python, Bash, Windows, Linux_
 ]
 
 = Projekty
@@ -122,7 +121,7 @@
   location: "Produkcja",
 )[
   - Flota, interwały serwisowe z konfigurowalnych reguł, rozliczenia kierowców (formularze mobilne, wydruki PDF w Typst), wycena tras; zastąpił arkusze Excel
-  - Integracje GPS i RCS (tylko odczyt), portal klienta z grafikiem i rezerwacjami (w przygotowaniu), moduły włączane licencją, w tym edycja JEST dla ekip terenowych
+  - Integracje GPS i RCS (tylko odczyt), portal klienta z grafikiem, rezerwacjami i GPS, moduły włączane licencją, w tym edycja JEST dla ekip terenowych
   - _Stack: Rust (axum, sqlx), PostgreSQL, React, TypeScript, Vite, Typst, Docker, Cloudflare Tunnel_
 ]
 
@@ -177,7 +176,7 @@
   date: "2025 – 2026",
   institution: "Politechnika Częstochowska",
   location: "Częstochowa",
-  [Praca: _"Porównanie wybranych dużych modeli językowych pod kątem generowania odpowiedzi tekstowych i kodu"_ (obroniona 2026). Kursy: Widzenie Komputerowe, Systemy Rekomendacyjne, NLP, Deep Learning, Architektury Obliczeniowe dla AI.],
+  [Praca: _"Porównanie wybranych dużych modeli językowych pod kątem generowania odpowiedzi tekstowych i kodu"_ (obroniona 2026). Kursy: Widzenie Komputerowe, NLP, Deep Learning.],
 )
 
 #entry(
@@ -185,5 +184,5 @@
   date: "2020 – 2025",
   institution: "Politechnika Częstochowska",
   location: "Częstochowa",
-  [Praca: _"Porównanie firmware drukarek 3D — Marlin vs Klipper"_. Kursy: Bezpieczeństwo Systemów Komputerowych, Zarządzanie Infrastrukturą Datacenter, Sieci Bezprzewodowe, Administracja Sieciowymi SO, Systemy Wbudowane.],
+  [Praca: _"Porównanie firmware drukarek 3D — Marlin vs Klipper"_. Kursy: Bezpieczeństwo Systemów, Infrastruktura Datacenter, Administracja SO.],
 )
