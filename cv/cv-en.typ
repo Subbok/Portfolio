@@ -89,7 +89,7 @@
   stack: [Rust (axum, sqlx), PostgreSQL, React, TypeScript, Typst, Docker, Cloudflare Tunnel],
 )[
   - Fleet, service intervals from configurable rules, driver settlements (mobile forms, PDF printouts via Typst) and route pricing — replaced a set of Excel sheets
-  - GPS and RCS integrations, client portal with schedule and reservations (in progress), licence-enabled modules incl. the JEST edition for field crews
+  - GPS and RCS integrations, client portal with schedule, reservations and GPS, licence-enabled modules incl. the JEST edition for field crews
 ]
 
 #entry(

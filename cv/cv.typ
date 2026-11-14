@@ -89,7 +89,7 @@
   stack: [Rust (axum, sqlx), PostgreSQL, React, TypeScript, Typst, Docker, Cloudflare Tunnel],
 )[
   - Flota, interwały serwisowe z konfigurowalnych reguł, rozliczenia kierowców (formularze mobilne, wydruki PDF w Typst) i wycena tras — zastąpił arkusze Excel
-  - Integracje GPS i RCS, portal klienta z grafikiem i rezerwacjami (w przygotowaniu), moduły włączane licencją, w tym edycja JEST dla ekip terenowych
+  - Integracje GPS i RCS, portal klienta z grafikiem, rezerwacjami i GPS, moduły włączane licencją, w tym edycja JEST dla ekip terenowych
 ]
 
 #entry(
